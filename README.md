@@ -17,10 +17,12 @@ AiotInOne 是一套可擴充的 AIoT 共用平台，第一個落地場景為智�
 - 溫度、空氣濕度、土壤濕度、光照監控
 - 農場、田區、作物批次與設備管理
 - 即時 Dashboard、歷史趨勢與告警中心
+- 水泵、風扇、閥門安全人工控制
 - AI 異常偵測、預測分析與智慧推薦
+- Producer、Merchant、Consumer 三套角色提示語與 JSON 快取
 - 生產端、銷售端、消費端三套入口
-- 農產品供應批次與 QR Code 追溯
-- 裝置憑證、RBAC、命令稽核與安全控制
+- 農產品供應、採購需求、QR Code 追溯
+- 裝置憑證、RBAC、Prompt Registry、稽核與安全治理
 
 ## 建議技術架構
 
@@ -37,14 +39,20 @@ AiotInOne 是一套可擴充的 AIoT 共用平台，第一個落地場景為智�
 
 Laravel 負責帳號、權限、農場、設備、商業流程與資料一致性；MQTT Broker 負責裝置訊息；FastAPI 負責 AI 推論。AI 建議不得直接操作設備，任何控制命令都必須經過 Laravel 權限、安全限制與稽核流程。
 
-## 文件入口
+## 完整規格入口
 
+- [完整產品規格](docs/spec/COMPLETE_PRODUCT_SPEC.md)
+- [邏輯資料模型](docs/spec/DATA_MODEL.md)
+- [MVP 驗收矩陣](docs/spec/ACCEPTANCE_MATRIX.md)
+- [完整 Capability 索引](openspec/changes/bootstrap-smart-agriculture-platform/SPECIFICATION_INDEX.md)
 - [AI 開發治理規範](AGENTS.md)
 - [專案與技術背景](openspec/project.md)
 - [系統架構](docs/architecture/SYSTEM_ARCHITECTURE.md)
 - [第一階段 OpenSpec Proposal](openspec/changes/bootstrap-smart-agriculture-platform/proposal.md)
 - [第一階段技術設計](openspec/changes/bootstrap-smart-agriculture-platform/design.md)
 - [第一階段任務清單](openspec/changes/bootstrap-smart-agriculture-platform/tasks.md)
+
+完整 OpenSpec change 現在涵蓋 17 個 capability：身分權限、組織多租戶、農務營運、裝置管理與生命週期、Telemetry、告警、設備命令、AI Insights、AI Orchestration、供應採購、追溯消費者、三方入口、通知、治理稽核、API 契約、資料治理與非功能需求。
 
 ## OpenSpec 開發流程
 
@@ -82,10 +90,10 @@ AiotInOne/
 ├── firmware/esp32/         # ESP32 範例與模擬器
 ├── infra/docker/           # Docker Compose 與服務設定
 ├── packages/contracts/     # API / MQTT JSON schemas
-├── docs/                   # 架構、API、安全與維運文件
+├── docs/                   # 產品、架構、API、安全與維運文件
 └── openspec/               # 規格與 change 管理
 ```
 
 ## 目前狀態
 
-目前已完成第一階段架構設計與 OpenSpec change 草案，尚未開始大量程式實作。下一步應由 Codex 依 `tasks.md` 從 OpenSpec 初始化、本機開發環境與 Laravel/FastAPI 骨架開始執行。
+完整產品與 Capability 規格已建立，尚未開始大量程式實作。下一步應由 Codex 先執行 OpenSpec CLI 初始化與驗證，再依 `tasks.md` 從開發環境、Identity、Organization、Farm、Device、Telemetry 順序實作。每一階段都必須對照 `ACCEPTANCE_MATRIX.md` 完成測試與驗收。
