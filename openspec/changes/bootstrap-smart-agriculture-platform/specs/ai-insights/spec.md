@@ -4,6 +4,8 @@
 
 定義異常偵測、預測分析與智慧推薦的服務契約、可解釋性與安全邊界。
 
+## ADDED Requirements
+
 ### Requirement: Versioned AI Insight Results
 
 系統 SHALL 對每次 AI 推論保存請求識別、insight 類型、輸入摘要、結果、模型名稱、模型版本、可信度、解釋、狀態與產生時間。

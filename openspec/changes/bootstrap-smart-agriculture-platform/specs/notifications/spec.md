@@ -4,6 +4,8 @@
 
 定義告警、裝置、AI、採購與治理事件的站內通知、Email 通知、偏好、重試、去重與可追蹤性。
 
+## ADDED Requirements
+
 ### Requirement: Event-Driven Notification
 
 系統 SHALL 由版本化 Domain Event 建立通知，不得由畫面直接拼接不可追蹤的通知內容。

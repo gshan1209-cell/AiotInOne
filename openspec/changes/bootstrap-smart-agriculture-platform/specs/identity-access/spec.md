@@ -4,6 +4,8 @@
 
 定義智慧農業三方平台的帳號、組織、角色與資料隔離行為。
 
+## ADDED Requirements
+
 ### Requirement: Role-Based Portal Access
 
 系統 SHALL 支援 Producer、Merchant、Consumer 與 Administrator 四類主要權限角色，並依角色提供對應入口與功能。
