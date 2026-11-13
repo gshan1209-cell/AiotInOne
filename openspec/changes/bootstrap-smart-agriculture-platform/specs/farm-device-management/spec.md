@@ -4,6 +4,8 @@
 
 定義農場、田區、作物批次、感測器與控制設備的管理行為。
 
+## ADDED Requirements
+
 ### Requirement: Farm Structure Management
 
 Producer SHALL 能在其組織範圍內建立與管理農場、田區及作物批次。

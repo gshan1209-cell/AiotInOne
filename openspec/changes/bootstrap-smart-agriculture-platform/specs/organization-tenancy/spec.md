@@ -4,6 +4,8 @@
 
 定義 Producer、Merchant 與治理組織的生命週期、成員邀請、角色指派、組織切換與資料隔離。
 
+## ADDED Requirements
+
 ### Requirement: Organization Lifecycle
 
 系統 SHALL 支援建立、啟用、停用與封存 Producer、Merchant 及 Platform 類型組織，且每個組織 SHALL 具有唯一識別、名稱、類型、狀態、時區與聯絡資訊。

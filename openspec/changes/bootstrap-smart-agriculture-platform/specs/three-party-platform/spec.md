@@ -4,6 +4,8 @@
 
 定義生產端、銷售端、消費端與治理後台的主要使用行為及資訊邊界。
 
+## ADDED Requirements
+
 ### Requirement: Producer Portal
 
 Producer Portal SHALL 提供農場、田區、作物批次、設備、即時監控、告警、AI 農務建議與供應批次管理。

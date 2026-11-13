@@ -4,6 +4,8 @@
 
 定義 MQTT 感測資料接收、驗證、保存、查詢與告警生命週期。
 
+## ADDED Requirements
+
 ### Requirement: Validated Telemetry Ingestion
 
 系統 SHALL 接收經授權裝置發布的 telemetry，並在寫入正式量測資料前驗證 Topic、裝置身分、payload schema、量測類型與單位。

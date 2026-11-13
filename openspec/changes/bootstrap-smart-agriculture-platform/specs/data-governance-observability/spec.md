@@ -4,6 +4,8 @@
 
 定義資料分類、保存、刪除、備份、還原、日誌、指標、追蹤與營運告警。
 
+## ADDED Requirements
+
 ### Requirement: Data Classification
 
 系統 SHALL 將資料至少分類為 public、internal、confidential、secret。裝置憑證、密碼與 Token MUST 分類為 secret；精確位置、個資與內部農務成本 SHALL 至少為 confidential。

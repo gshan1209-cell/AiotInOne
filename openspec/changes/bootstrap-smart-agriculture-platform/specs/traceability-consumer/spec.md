@@ -4,6 +4,8 @@
 
 定義農產品批次追溯、QR Code 公開頁、欄位白名單、Consumer 商品資訊、季節內容與 AI 推薦。
 
+## ADDED Requirements
+
 ### Requirement: Traceability Event Chain
 
 系統 SHALL 以不可任意覆寫的事件鏈保存種植、農務、採收、分級、包裝、供應與下架等追溯事件。修正 SHALL 以新增更正事件完成，不得靜默改寫歷史。
