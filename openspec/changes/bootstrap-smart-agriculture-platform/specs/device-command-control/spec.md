@@ -4,6 +4,8 @@
 
 定義水泵、風扇、閥門等控制設備的人工命令、安全限制、MQTT 契約、狀態機、稽核與緊急停止。
 
+## ADDED Requirements
+
 ### Requirement: Authorized Manual Command
 
 MVP SHALL 僅允許具備指定農場設備控制權限的使用者建立命令。每次命令 MUST 保存操作者、組織、農場、裝置、通道、目標狀態、原因、建立時間、有效期限與 idempotency key。

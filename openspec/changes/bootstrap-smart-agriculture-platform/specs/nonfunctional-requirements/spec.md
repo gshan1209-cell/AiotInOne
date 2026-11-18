@@ -4,6 +4,8 @@
 
 定義 MVP 的效能、可靠性、可用性、安全、相容性、無障礙、維護性與災難復原驗收標準。
 
+## ADDED Requirements
+
 ### Requirement: Dashboard Performance
 
 在開發基準資料量下，Producer Dashboard 最新值 API 的 p95 回應時間 SHOULD 不超過 500 ms，七天小時聚合趨勢 API 的 p95 SHOULD 不超過 1.5 秒，不含使用者網路延遲。

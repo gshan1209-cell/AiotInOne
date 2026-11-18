@@ -4,6 +4,8 @@
 
 定義三方角色 AI 提示語、Prompt Registry、JSON 快取、模型路由、成本紀錄、內容安全、fallback 與人工回饋。
 
+## ADDED Requirements
+
 ### Requirement: Role-Specific Prompt Registry
 
 系統 SHALL 維護 Producer、Merchant、Consumer 三套獨立提示語模板。每個模板 MUST 保存用途、角色、版本、輸入 Schema、輸出 Schema、狀態、建立者、核准者與生效時間。

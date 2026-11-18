@@ -4,6 +4,8 @@
 
 定義農場、田區、溫室、作物品種、種植批次、農務活動、投入品與採收紀錄。
 
+## ADDED Requirements
+
 ### Requirement: Farm and Field Structure
 
 Producer SHALL 能在授權組織內管理農場、田區與溫室。每個資源 MUST 包含 organization、狀態、名稱、時區及可選位置資訊。

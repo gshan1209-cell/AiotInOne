@@ -4,6 +4,8 @@
 
 定義 REST API、MQTT Topic、事件、AI Service 與錯誤回應的版本化契約，避免 PHP、ESP32 與 Python 服務各自演進。
 
+## ADDED Requirements
+
 ### Requirement: Versioned REST API
 
 所有外部與前後端 API SHALL 使用 `/api/v1` 或等效版本標識。破壞性變更 MUST 建立新版本，不得在既有版本靜默改變欄位語意。

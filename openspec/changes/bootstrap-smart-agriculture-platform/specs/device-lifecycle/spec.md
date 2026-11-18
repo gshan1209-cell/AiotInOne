@@ -4,6 +4,8 @@
 
 定義 Gateway、Sensor 與 Actuator 從配發、註冊、啟用、心跳、校正、韌體管理到撤銷與退役的完整生命週期。
 
+## ADDED Requirements
+
 ### Requirement: Device Provisioning
 
 系統 SHALL 為每台裝置產生唯一 device identifier 與獨立憑證。裝置祕密 MUST 只在建立或輪替時顯示一次。

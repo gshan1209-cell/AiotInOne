@@ -4,6 +4,8 @@
 
 定義平台治理後台、管理員權限、設定版本、稽核紀錄、安全事件與支援查詢。
 
+## ADDED Requirements
+
 ### Requirement: Administrative Role Separation
 
 系統 SHALL 區分 `platform_admin`、`support_operator`、`security_auditor` 與 `ai_governor` 等治理權限，且高風險操作 MUST 依最小權限原則限制。

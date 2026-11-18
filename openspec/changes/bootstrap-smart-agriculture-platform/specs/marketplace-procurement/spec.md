@@ -4,6 +4,8 @@
 
 定義 Producer 供應批次、Merchant 採購需求、搜尋媒合、詢價與供應狀態。MVP 不包含正式金流與複雜物流。
 
+## ADDED Requirements
+
 ### Requirement: Product and Supply Lot
 
 Producer SHALL 能由採收紀錄建立供應批次。供應批次 MUST 包含產品、來源批次、數量、單位、等級、可供應日期、價格資訊、公開狀態與追溯政策。
